@@ -1,0 +1,7 @@
+
+
+if 2 < 3:
+	print "yes"
+else:
+	if False:
+		print "no"
