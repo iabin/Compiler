@@ -1,0 +1,4 @@
+print 2 + 3
+x = 5**4
+y = x + 9 % 23
+print x / y

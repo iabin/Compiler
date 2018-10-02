@@ -15,9 +15,9 @@ import java.io.*;
 
 %%
 
-file_input:     
-  /* empty */               { System.out.println("[OK_] " + $$); }
-| file_input file_input_1   { System.out.println("[OK] " + $$); }
+file_input:     			{ System.out.println("[OK]"); }
+  /* empty */               
+| file_input file_input_1   
 
 file_input_1:
   SALTO
