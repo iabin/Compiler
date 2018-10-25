@@ -6,7 +6,11 @@ public class BooleanHoja extends Hoja {
 	
     public BooleanHoja(boolean b) {
 		valor = new Variable(b);
-		tipo = Tipos.BOOLEAN;
+		tipo = Tipo.BOOLEAN;
+    }
+
+    public void accept(Visitor v) {
+     	v.visit(this);
     }
 
 }

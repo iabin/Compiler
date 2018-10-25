@@ -6,7 +6,11 @@ public class IntHoja extends Hoja {
 	
     public IntHoja(int i) {
 		valor = new Variable(i);
-		tipo = Tipos.INT;
+		tipo = Tipo.INT;
     }
-    
+
+    public void accept(Visitor v) {
+     	v.visit(this);
+    }
+
 }

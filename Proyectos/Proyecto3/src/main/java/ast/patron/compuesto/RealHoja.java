@@ -6,7 +6,11 @@ public class RealHoja extends Hoja {
 	
     public RealHoja(double d) {
 		valor = new Variable(d);
-		tipo = Tipos.REAL;
+		tipo = Tipo.REAL;
+    }
+    
+    public void accept(Visitor v) {
+     	v.visit(this);
     }
     
 }

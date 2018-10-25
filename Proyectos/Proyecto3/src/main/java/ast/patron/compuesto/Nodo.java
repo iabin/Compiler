@@ -32,19 +32,19 @@ public class Nodo {
     }
 
     public Nodo getUltimoHijo() {
-	    return null;
+	    return hijos.getUltimoHijo();
     }
 
     public Nodo getPrimerHijo() {
-	    return null;
+	    return hijos.getPrimerHijo();
     }
 
     public void agregaHijoFinal(Nodo r) {
-
+        hijos.agregaHijoFinal(r);
     }
 
     public void agregaHijoPrincipio(Nodo r) {
-
+        hijos.agregaHijoPrincipio(r);
     }
 
     public Variable getValor() {
@@ -57,6 +57,10 @@ public class Nodo {
 
     public String getNombre() {
 	    return name;
+    }
+
+    public void setNombre(String name) {
+        this.name = name;
     }
 
     public void setValor(Variable nuevo) {
