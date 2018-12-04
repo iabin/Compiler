@@ -21,7 +21,7 @@ public class VisitorPrint implements Visitor {
 		System.out.print("[Hoja booleana] valor: " + n.getValor().bval);
     }
 
-    public void visit(NodoInterno n) {
+    public void visit(Nodo n) {
     	System.out.print("[Nodo interno] " + n.getNombre());
     	for (Nodo nH: n.getHijos().getAll()) {
     		visit(nH);

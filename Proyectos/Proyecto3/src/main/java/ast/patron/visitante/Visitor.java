@@ -7,5 +7,5 @@ public interface Visitor
     public void visit(RealHoja n);
     public void visit(StringHoja n);
     public void visit(BooleanHoja n);
-    public void visit(Nodointerno n);
+    public void visit(Nodo n);
 }
